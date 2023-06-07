@@ -10,8 +10,8 @@ const ProductList = () => {
   }, []);
 
   const getProducts = async () => {
-    const response = await axios.get("http://localhost:5000/products");
-    // const response = await axios.get("http://3.1.204.92:5000/products");
+    // const response = await axios.get("http://localhost:5000/products");
+    const response = await axios.get("http://3.1.204.92:5000/products");
     setProducts(response.data);
   };
 
