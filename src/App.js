@@ -6,6 +6,9 @@ import EditProduct from "./components/EditProduct";
 function App() {
   return (
     <BrowserRouter>
+        <div>
+      <p>Politeknik Elektronika Negeri Surabaya</p>
+        </div>
       <Routes>
         <Route path="/" element={<ProductList/>}/>
         <Route path="add" element={<AddProduct/>}/>

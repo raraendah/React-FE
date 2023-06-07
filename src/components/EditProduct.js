@@ -32,7 +32,8 @@ const EditProduct = () => {
     formData.append("file", file);
     formData.append("title", title);
     try {
-      await axios.patch(`http://3.1.204.92:5000/products/${id}`, formData, {
+      await axios.patch(`http://localhost:5000/products/${id}`, formData, {
+      // await axios.patch(`http://3.1.204.92:5000/products/${id}`, formData, {
         headers: {
           "Content-type": "multipart/form-data",
         },
